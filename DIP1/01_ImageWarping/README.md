@@ -31,14 +31,26 @@ python run_point_transform.py
 
 ## Results (need add more result images)
 ### Basic Transformation
+```option
+```
 <img src="pics/op.png" alt="alt text" width="800">
+```result
+```
 <img src="pics/trans.png" alt="alt text" width="800">
 
 ### Point Guided Deformation:
-<img src="record.png" alt="alt text" width="800">
-<img src="r1.png" alt="alt text" width="800">
-<img src="r2.png" alt="alt text" width="800">
+```标记图
+```
+<img src="pics/record.png" alt="alt text" width="800">
+```初步结果
+由于处理图像使用的映射在图片坐标范围内不是一个满射，因此结果图会出现一些白纹
+```
+<img src="pics/r1.png" alt="alt text" width="800">
+```改进结果
+重新检测结果图的像素值，若为白色，则用周围8个点的平均像素进行填补，可以填补部分白纹
+```
+<img src="pics/r2.png" alt="alt text" width="800">
 
 ## Acknowledgement
 
->📋 Thanks for the algorithms proposed by [Image Deformation Using Moving Least Squares](https://people.engr.tamu.edu/schaefer/research/mls.pdf).
+>📋 Thanks for the algorithms proposed by [Image Warping by Radial Basis Functions](https://onlinelibrary.wiley.com/doi/pdf/10.1111%2F1467-8659.1410035).
