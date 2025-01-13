@@ -1,24 +1,26 @@
 # Assignment 4 - 3DGS
 
+### Train
+##### Use the MVS to generate the 3D point cloud
+run:`python mvs_with_colmap.py --data_dir data/chair`;
 
-### Step 1 Use the MVS to generate the 3D point cloud
-## Results
-We use the image from the oringinal images:
+#### Debug the reconstruction
+run:`python debug_mvs_by_projecting_pts.py --data_dir data/chair`;
 
-<img src="result/orin.png" alt="alt text" width="600">
+#### Build 3DGS model
+run:`python train.py --colmap_dir data/chair --checkpoint_dir data/chair/checkpoints`.
 
-The result of mvs is as follows:
+### Results
 
-<img src="result/mvs.png" alt="alt text" width="600">
+#### original picture:r89
 
-### Step 2 Use the 3DGS to conduct reconstruction
-## Results
-The 3DGS of python version we use:
+<img src="result/r89.png" alt="ori" style="width:300px; height:auto;">
 
-<img src="result/3dgs_p.png" alt="alt text" width="600">
+#### projection(point cloud)
+![pic](result/projection.png)
 
-The 3DGS of oringinal version:
+#### result of train
+![tr](result/train.png)
+![gif](result/debug_rendering.gif)
 
-<img src="result/3dgs.png" alt="alt text" width="600">
 
-## From the results, we can see that the 3dgs can generate the 3d model from the 2d images, and the performance of 3DGS is very good
