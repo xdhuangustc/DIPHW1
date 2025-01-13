@@ -1,6 +1,5 @@
 # Assignment 4 - 3DGS
 
-This repository is JunyiWang's implementation of Assignment_04 of DIP. 
 
 ### Step 1 Use the MVS to generate the 3D point cloud
 ## Results
