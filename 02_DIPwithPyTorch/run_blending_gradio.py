@@ -138,7 +138,7 @@ def cal_laplacian_loss(foreground_img, foreground_mask, blended_img, background_
                         [0., 1., 0.]], 
                         dtype=foreground_img.dtype, 
                         device=foreground_img.device)
-    laplacian_tensor= torch.tensor([[-1., -1., -1.],      ###
+    laplacian_tensor2= torch.tensor([[-1., -1., -1.],      ###
                         [-1., -8., -1.], 
                         [-1., -1., -1.]], 
                         dtype=foreground_img.dtype, 
