@@ -2,7 +2,10 @@
 
 
 ### 1.Poisson Image Editing with PyTorch.
- 执行'run_blending_gradio.py'.
+#### Running
+ run :`python run_blending_gradio.py`.
+ #### Results
+![equation]() 
 
 
 ### 2. Pix2Pix.
