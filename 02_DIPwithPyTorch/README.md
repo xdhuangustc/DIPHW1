@@ -26,5 +26,17 @@
 run : `python train.py`.
 
 #### Results
+##### val epoch_100
+![equation](Pix2Pix/result/101.png) 
+![equation](Pix2Pix/result/102.png) 
+
+##### val epoch_400
+![equation](Pix2Pix/result/401.png) 
+![equation](Pix2Pix/result/402.png) 
+
+##### val epoch_795
+![equation](Pix2Pix/result/801.png) 
+![equation](Pix2Pix/result/802.png) 
+
 
 ---
